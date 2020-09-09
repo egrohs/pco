@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>cpo</title>
+</head>
+<body>
+	<h2>cpo</h2>
+	<p>
+		<strong>Versão:</strong> @project.version@
+	</p>
+	<p>
+		<strong>Api:</strong> <a id="swagger"></a>
+		<script>
+			var swaggerHref = window.location.origin + '/cpo/swagger-ui.html';
+			var swaggerLink = document.getElementById('swagger');
+			swaggerLink.href = swaggerHref;
+			swaggerLink.text = swaggerHref;
+		</script>
+	</p>
+</body>
+</html>
